@@ -1,0 +1,102 @@
+body{
+    font-family: 'Montserrat';
+    margin: 0 auto;
+}
+.brand-img{
+    max-width: 80px;
+}
+header{
+    background-image: url("../img/banner.png");
+    height: 100vh;
+}
+header .nav-menu {
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1));
+    padding: 5px;
+    transition: all .7s;
+  }
+.banner-text {
+    position: absolute;
+    top:60%;
+    left: 8%;
+    
+    /*
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%; */
+}
+header .custom-navbar {
+    padding: 0px 30px;
+    background: linear-gradient(#ccc, #ddd);
+  }
+
+header .banner-text {
+    animation-name: anim;
+    animation-duration: 2s;
+    animation-delay: .5s;
+    animation-fill-mode: backwards;
+}
+.fromLeft {
+    animation-name: fromLeft;
+    animation-duration: 3s;
+}
+
+.arrow {
+    display: inline-block;
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background: transparent;
+    text-indent: -9999px;
+    border-top: 2px solid #bfbfbf;
+    border-left: 2px solid #bfbfbf;
+    transition: all 250ms ease-in-out;
+    text-decoration: none;
+    color: transparent;
+  }
+  
+  .arrow:hover {
+    border-color: gray;
+    border-width: 5px;
+  }
+  
+  .arrow:before {
+    display: block;
+    height: 200%;
+    width: 200%;
+    margin-left: -50%;
+    margin-top: -50%;
+    content: "";
+    transform: rotate(45deg);
+  }
+
+  .arrow.down {
+    transform: rotate(-135deg);
+    right: 0%;
+  }
+
+
+
+
+  
+@keyframes anim {
+    0% {
+      transform: translateX(-100px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+@keyframes fromLeft {
+    0% {
+      transform: translateX(-120px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
