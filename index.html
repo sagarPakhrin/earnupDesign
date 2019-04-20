@@ -8,6 +8,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 <link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/login.css">
     <title>Hello, world!</title>
   </head>
   <body>
@@ -51,8 +52,25 @@
     </div>
 
     </header>  
+<div class="login-page">
+  <div class="form">
+    <form class="register-form">
+      <input type="text" placeholder="name"/>
+      <input type="password" placeholder="password"/>
+      <input type="text" placeholder="email address"/>
+      <button>create</button>
+      <p class="message">Already registered? <a href="#">Sign In</a></p>
+    </form>
+    <form class="login-form">
+      <input type="text" placeholder="username"/>
+      <input type="password" placeholder="password"/>
+      <button>login</button>
+      <p class="message">Not registered? <a href="#">Create an account</a></p>
+    </form>
+  </div>
+</div>
 
-    <section class="bg-secondary py-4" id="jobsSection">
+    <section name="jobsSection" class="bg-secondary py-4" id="jobsSection">
         <div class="container-fluid">
             <!-- title -->
             <div class="row text-white text-center">
@@ -65,25 +83,27 @@
             <div class="row">
                 <div class="col-lg-4 col-sm-6 my-2">
                     <div class="card border-0 card-shadow">
-                        <img src="images/nature.jpeg"  class="card-img" alt="">
+												<i class="fa fa-bath"></i>
+												
                         <div class="card-img-overlay">
-                            <h5 class="text-white text-uppercase font-weight-bold p-2 heading">Nature Photography</h5>
+                            <h5 class="text-white text-uppercase text-center font-weight-bold p-2 heading">Car
+																Washing</h5>
                         </div>
                     </div>
                 </div><div class="col-lg-4 col-sm-6 my-2">
                     <div class="card border-0 card-shadow">
                         <img src="images/wedding.jpeg"  class="card-img" alt="">
                         <div class="card-img-overlay">
-                            <h5 class="text-white text-uppercase font-weight-bold p-2
-                            heading">Wedding Photography</h5>
+                            <h5 class="text-white text-center text-uppercase font-weight-bold p-2
+                            heading">Laundry</h5>
                         </div>
                     </div>
                 </div><div class="col-lg-4 col-sm-6 my-2">
                     <div class="card border-0 card-shadow">
                         <img src="images/business.jpeg"  class="card-img" alt="">
                         <div class="card-img-overlay">
-                            <h5 class="text-white text-uppercase font-weight-bold p-2
-                            heading">Business Photography</h5>
+                            <h5 class="text-white text-center text-uppercase font-weight-bold p-2
+                            heading">Babby Siting</h5>
                         </div>
                     </div>
                 </div><div class="col-lg-4 col-sm-6 my-2">
